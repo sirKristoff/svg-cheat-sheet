@@ -1,0 +1,9 @@
+# This .gitignore is appropriate for repositories deployed to SVG
+
+# Exported raster graphics
+*.png
+*.jpg
+*jpeg
+
+# Specific ignore for VS Code
+.vscode
