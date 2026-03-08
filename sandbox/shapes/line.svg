@@ -1,0 +1,64 @@
+<svg  xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="200"  height="200"
+      viewBox="0 0 200 200"
+>
+
+  <!-- If you do not specify the stroke
+       color the line will not be visible -->
+  
+  <!-- Scaling: By default, stroke thickness scales with the SVG size.
+       To keep a consistent thickness regardless of scaling,
+       use vector-effect="non-scaling-stroke". -->
+  
+
+  <text x="10" dx="-1.65" y="20" fill="blue">L10;20</text>
+  <text x="30" dx="-1.65" y="100" fill="blue">L30;100</text>
+
+  <line x1="10" y1="20"  x2="30" y2="100"
+    stroke="red"
+    stroke-width="4"
+    stroke-opacity="0.5"
+    stroke-linecap="square"
+    
+  />
+  <line x1="10" y1="20"  x2="30" y2="100" stroke="black" />
+
+
+  <text x="100" dx="-1.65" y="10" fill="blue">L100;10</text>
+  <text x="100" dx=""      y="12" fill="red">L</text> <!-- -2 (offset) +4 (1st dash length) -->
+  <text x="100" dx=""      y="17" fill="cyan">L</text> <!-- -2 (offset) +4 (1st dash length) +5 (1st gap length) -->
+  <text x="100" dx=""      y="32" fill="magenta">L</text> <!-- -2 +4 +5 +15 -->
+  <text x="100" dx="-1.65" y="110" fill="blue">L100;110</text>
+
+  <line x1="100" y1="10"  x2="100" y2="110"
+    stroke="cadetblue"
+    stroke-width="4"
+    stroke-opacity="0.75"
+    stroke-dasharray="4, 5, 15, 5"
+    stroke-dashoffset="2"
+  />
+  <!-- stroke-linecap affects each dash separately -->
+
+
+
+  <text x="125" dx="-1.65" y="145" fill="blue">L125;145</text>
+
+  <line x1="10" y1="150"  x2="125" y2="150"
+    stroke="darkgreen"
+    stroke-width="10"
+    stroke-opacity="0.75"
+
+    stroke-linecap="round"
+  />
+  <line x1="10" y1="150"  x2="200" y2="150"
+    stroke="black"
+    stroke-width="1"
+    stroke-opacity="0.75"
+  />
+  <line x1="125" y1="150"  x2="200" y2="150"
+    stroke="cyan"
+    stroke-width="10"
+    stroke-opacity="0.75"
+  />
+</svg>

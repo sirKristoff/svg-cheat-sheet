@@ -1,0 +1,31 @@
+<svg  xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="200"  height="200"
+      viewBox="0 0 200 200"
+>
+    <style>
+        text {
+            font: 14px Consolas;
+            fill: red;
+        }
+    </style>
+    
+    <ellipse cx="100" cy="100" rx="80" ry="60"
+        stroke="greenyellow"
+        stroke-width="6"
+        stroke-opacity="0.5"
+        stroke-dasharray="25 6.42"
+
+        fill="blue"
+        fill-opacity="0.5" 
+    />
+    <!-- Default stroke is 'none', fill is 'black' -->
+    <circle cx="100" cy="100" r="2" />
+
+    <text x="100" dx="-1.65" y="100">L100;100</text>
+    <text x="100" dx="-1.65" y="112">W160;H120</text>
+    <text x="20" dx="-1.65" y="100">L20</text>
+    <text x="100" dx="-1.65" y="37">L;37</text>
+    <text x="100" dx="-1.65" y="163">L;163</text>
+    
+</svg>

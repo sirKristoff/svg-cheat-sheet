@@ -1,0 +1,32 @@
+<svg  xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="200"  height="200"
+      viewBox="0 0 200 200"
+>
+    <style>
+        text {
+            font: 14px Consolas;
+            fill: red;
+        }
+    </style>
+    
+    <!-- r is 60px (30% x 200px of viewBox) -->
+    <circle cx="100" cy="100" r="30%"
+        stroke="greenyellow"
+        stroke-width="6"
+        stroke-opacity="0.5"
+        stroke-dasharray="25 6.42"
+
+        fill="blue"
+        fill-opacity="0.5" 
+    />
+    <!-- Default stroke is 'none', fill is 'black' -->
+    <circle cx="100" cy="100" r="2" />
+
+    <text x="100" dx="-1.65" y="100" fill="red">L100;100</text>
+    <text x="100" dx="-1.65" y="112" fill="red">⌀120</text>
+    <text x="40" dx="-1.65" y="100" fill="red">L40</text>
+    <text x="100" dx="-1.65" y="37" fill="red">L;37</text>
+    <text x="100" dx="-1.65" y="163" fill="red">L;163</text>
+    
+</svg>

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="2000"  height="2000"
+      viewBox="0 0 100 100"
+      font-size="4px"  font-family="Consolas"
+>
+    <style>
+        text {
+            font: 4px Consolas;
+            fill: slateblue;
+        }
+    </style>
+    
+    <path d="M 10,0  v 100    M 0,10  h 100
+             M 20,0  v 100    M 0,20  h 100
+             M 30,0  v 100    M 0,30  h 100
+             M 40,0  v 100    M 0,40  h 100
+             M 50,0  v 100    M 0,50  h 100
+             M 60,0  v 100    M 0,60  h 100
+             M 70,0  v 100    M 0,70  h 100
+             M 80,0  v 100    M 0,80  h 100
+             M 90,0  v 100    M 0,90  h 100
+            "
+        stroke="black"  stroke-width="0.1"
+        stroke-dasharray="4 1" stroke-dashoffset="2"
+        fill="none"
+    />
+
+    <!-- 'M' 'm' - move pen
+         'L' 'l' - line
+         'H' 'h' - horizontal line
+         'V' 'v' - vertical line
+         'Z' 'z' - close path -->
+    <path d="M 5,5
+             L 20,10  10,20
+             h 20
+             m 10,0
+             v -15
+             h -10
+             Z
+            "
+        stroke="blue"  stroke-linecap="round"  fill="yellowgreen"
+    />
+
+
+
+    <!-- (sqrt(2)-1)*4/3 = 0.5522847 -->
+
+    <!-- 'C' - cubic Bézier curve from the current point (65, 15)
+         to the end point (75, 25).
+         The start control point is (70.52285, 15)
+         and the end control point is (75, 19.47715). -->
+    <!-- 'c' - cubic Bézier curve
+          with relative coordinates to the current point (75, 25) -->
+    <!-- 's' - smooth cubic Bézier curve.
+         The start control point is the reflection of the end control point
+         of the previous curve command about the current point. -->
+    <path d="M 65, 15
+             C 70.52285, 15 ,  75, 19.47715 ,  75, 25
+             c 0, 5.52285 ,  -4.47715, 10 ,  -10, 10
+             S 55, 30.52285 ,  55, 25
+            "
+        stroke="red"  fill="none"
+    />
+    <text x="65" y="15" dx="-0.182617em">˻65,15</text>
+    <text x="75" y="25" dx="-0.182617em">˻75,25</text>
+    <text x="65" y="35" dx="-0.182617em" dy="1.381474104ex">˹65,35</text>
+
+    <line   x1="65"       y1="15"
+            x2="70.52285" y2="15"        stroke="darkcyan" stroke-width="0.25" />
+    <circle cx="70.52285" cy="15"        r="0.3" />
+    <line   x1="75"       y1="25"
+            x2="75"       y2="19.47715"  stroke="darkcyan" stroke-width="0.25" />
+    <circle cx="75"       cy="19.47715"  r="0.3" />
+    
+    <line   x1="75"       y1="25"
+            x2="75"       y2="30.52285"  stroke="darkcyan" stroke-width="0.25" />
+    <circle cx="75"       cy="30.52285"  r="0.3" />
+    <line   x1="65"       y1="35"
+            x2="70.52285" y2="35"        stroke="darkcyan" stroke-width="0.25" />
+    <circle cx="70.52285" cy="35"        r="0.3" />
+
+    <line   x1="65"       y1="35"
+            x2="59.47715" y2="35"        stroke="darkcyan" stroke-width="0.25" stroke-dasharray="0.5" />
+    <circle cx="59.47715" cy="35"        r="0.3" />
+    <line   x1="55"       y1="25"
+            x2="55"       y2="30.52285"  stroke="darkcyan" stroke-width="0.25" />
+    <circle cx="55"       cy="30.52285"  r="0.3" />
+
+    <circle cx="65" cy="25" r="10" stroke="black" stroke-width="1.0" stroke-opacity="0.7" fill="none" />
+
+
+
+    <!-- 'Q' - quadratic Bézier curve from the current point (10, 40)
+         to the end point (10+20, 40+0).
+         The control point is (10+10, 40-20). -->
+    <!-- 'q' - quadratic Bézier curve
+         with relative coordinates to the current point. -->
+    <!-- 'T' - smooth quadratic Bézier curve from the current point (10+20, 40+0)
+         to the end point (50, 40).
+         The control point is the reflection of the control point
+         of the previous curve command about the current point. -->
+    <path d="M 10, 40
+             q 10, -20 ,  20, 0
+             T 50, 50
+            "
+        stroke="darkmagenta"  fill="none"
+    />
+    <text x="10" y="40" dx="-0.182617em" dy="1.381474104ex">˹10,40</text>
+    <text x="30" y="40" dx="-0.182617em">˻30,40</text>
+    <text x="50" y="50" dx="-0.182617em">˻50,50</text>
+
+    <polyline points="10,40  20,20  30,40"  stroke="darkcyan" stroke-width="0.25" fill="none"/>
+    <circle cx="20" cy="20"        r="0.3" />
+    <polyline points="20,20  40,60  50,50"  stroke="darkcyan" stroke-width="0.25" stroke-dasharray="0.5" fill="none"/>
+    <circle cx="40" cy="60"        r="0.3" />
+
+
+    
+    <!-- A  rx  ry  angle  large-arc-flag  sweep-flag  x  y -->
+    <!-- Arc curve from the current point to the coordinate `x`, `y`
+         `rx` and `ry` are the two radii of the ellipse
+         `angle` represents a rotation (in degrees) of the ellipse relative to the x-axis
+         `large-arc-flag` - the large arc (1) or small arc (0)
+         `sweep-flag` - the clockwise turning arc (1) or counterclockwise (0) -->
+    
+    <path d="M 30, 70  a 10 10  666  1 0  -10 10"
+        stroke="turquoise"  fill="none" />
+    <path d="M 30, 70  a 10 10  666  0 0  -10 10"
+        stroke="lightpink"  fill="none" />
+    <path d="M 30, 70  a 10 10  666  0 1  -10 10"
+        stroke="lightsalmon"  fill="none" />
+    <text x="30" y="70" dx="-0.182617em">˻30,70</text>
+    
+    <path d="M 70, 70  a 15 10  90  1 0  -10 15"
+        stroke="blue"  fill="none" />
+    <path d="M 70, 70  a 15 10   0  1 0  -10 15"
+        stroke="red"  fill="none" />
+    <text x="70" y="70" dx="-0.182617em">˻70,70</text>
+</svg>

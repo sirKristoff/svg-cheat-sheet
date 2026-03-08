@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="1400" height="1400"
+    viewBox="0 0 1400 1400" 
+    font-size="10pt"  font-family="Consolas"
+>
+
+    <style>
+        text.pointer {
+            fill: darkblue;
+        }
+    </style>
+
+    
+    <path d="M 10,0  v 100    M 0,10  h 200
+             M 20,0  v 100    M 0,20  h 200
+             M 30,0  v 100    M 0,30  h 200
+             M 40,0  v 100    M 0,40  h 200
+             M 50,0  v 100    M 0,50  h 200
+             M 60,0  v 100    M 0,60  h 200
+             M 70,0  v 100    M 0,70  h 200
+             M 80,0  v 100    M 0,80  h 200
+             M 90,0  v 100    M 0,90  h 200
+             M 100,0 v 100
+             M 110,0 v 100
+             M 120,0 v 100
+             M 130,0 v 100
+             M 140,0 v 100
+             M 150,0 v 100
+             M 160,0 v 100
+             M 170,0 v 100
+             M 180,0 v 100
+             M 190,0 v 100
+            "
+        stroke="black"  stroke-width="0.1"
+        stroke-dasharray="4 1" stroke-dashoffset="2"
+        fill="none"
+    />
+
+    <!-- class="pointer" dx="-0.1826em">˻ -->
+    <!-- class="pointer" dx="-0.1826em" dy="1.3815ex">˹ -->
+
+    <text class="pointer" x="0" y="0" dx="-0.1826em" dy="1.3815ex">˹0,0</text>
+    <!-- If group's embeded in defs element, it is not printed  -->
+    <!-- <defs> -->
+    <g id="group" >
+        <line x1="0" y1="0" x2="45" y2="0" stroke="darkgreen" />
+        <rect x="0" y="10" width="45" height="20" stroke="darkgreen" />
+        <text x="0" y="40" stroke="darkred" fill="darkred" >
+            Group</text>
+    </g>
+    <!-- </defs> -->
+    
+
+    <!-- Move group -->
+    <text x="65" y="5" class="pointer" dx="-0.1826em" dy="1.3815ex">˹65,5</text>
+    <use href="#group" x="65" y="5"  fill="darkred" />
+
+
+    <!-- Translate group -->
+    <g  transform="translate(5,50)">
+        <text x="0" y="0" class="pointer" dx="-0.1826em" dy="1.3815ex">˹5,50</text>
+        <use href="#group" x="-2" fill="darkgreen" />
+    </g>
+
+
+    <!-- Rotate referenced group -->
+    <text x="80" y="50" class="pointer" dx="-0.1826em" dy="1.3815ex">˹80,50</text>
+    <use href="#group" transform="translate(80,50) rotate(45)" fill="darkblue" />
+
+</svg>

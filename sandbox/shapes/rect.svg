@@ -1,0 +1,52 @@
+<svg  xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+      <!-- width="200"  height="200"
+      viewBox="0 0 200 200" -->
+
+    <!-- The stroke is a line centered on the edge of the fill -->
+    <rect x="10" y="10" width="100" height="70"
+      stroke="red"
+      stroke-width="6"
+      stroke-opacity="0.5"
+      stroke-dasharray="15 5"
+      stroke-dashoffset="7.5"
+
+      fill="green"
+    />
+    <text x="10" dx="-1.65" y="10" fill="blue">L10;10</text>
+    <text x="110" dx="-1.65" y="80" fill="blue">L110;80</text>
+
+
+
+    <text x="140" dx="-1.65" y="10" fill="lightcoral">L140;10</text>
+    <!-- Notice the stroke and fill overlap,
+         which doubles the opacity when overlapping -->
+    <rect x="140" y="10" width="100" height="70"
+      stroke="yellow"
+      stroke-width="1"
+      stroke-opacity="0.5"
+
+      fill="yellow"
+      fill-opacity="0.5"
+    />
+    <!-- rx - The horizontal corner radius of the rect.
+         ry - The vertical corner radius of the rect. -->
+    <rect x="140" y="10" width="100" height="70"
+      rx="10" ry="20"
+      stroke="black"
+      stroke-width="1"
+
+      fill="none"
+    />
+
+    <circle cx="150" cy="20" r="10" stroke="blue" fill="none" stroke-width="0.5" />
+    <circle cx="150" cy="20" r="0.25" />
+    <text x="150" dx="-1.65" y="20" fill="blue">L⌀20</text>
+    <line x1="150" y1="9"  x2="150" y2="11" stroke="blue" stroke-width="0.4" />
+    
+    <circle cx="160" cy="30" r="20" stroke="red" fill="none"  stroke-width="0.5" />
+    <circle cx="160" cy="30" r="0.25" />
+    <text x="160" dx="-1.65" y="30" fill="red">L⌀40</text>
+    <line x1="139" y1="30"  x2="141" y2="30" stroke="red" stroke-width="0.4" />
+</svg>

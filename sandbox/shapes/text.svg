@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="4000"  height="2000"
+      viewBox="0 0 200 100"
+      font-size="11.75210406pt"
+>
+    <!-- Each 1pt of Consolas font size is 0.85px height of 'L' letter. -->
+    <!-- 11.75210406pt = 10px -->
+    <!-- 223.529pt = 190px -->
+    <style>
+        text {
+            font: 11.75210406pt Consolas;
+        }
+        .mediumfont {
+            font: 8pt Consolas;
+        }
+        .smallfont {
+            font: 5pt Consolas;
+        }
+
+        a {
+            fill: blue;
+            text-decoration: underline;
+        }
+        a:hover,
+        a:active {
+            outline: dotted 1px blue;
+        }
+    </style>
+    
+    <path d="M 10,0  v 100    M 0,10  h 200
+             M 20,0  v 100    M 0,20  h 200
+             M 30,0  v 100    M 0,30  h 200
+             M 40,0  v 100    M 0,40  h 200
+             M 50,0  v 100    M 0,50  h 200
+             M 60,0  v 100    M 0,60  h 200
+             M 70,0  v 100    M 0,70  h 200
+             M 80,0  v 100    M 0,80  h 200
+             M 90,0  v 100    M 0,90  h 200
+             M 100,0 v 100
+             M 110,0 v 100
+             M 120,0 v 100
+             M 130,0 v 100
+             M 140,0 v 100
+             M 150,0 v 100
+             M 160,0 v 100
+             M 170,0 v 100
+             M 180,0 v 100
+             M 190,0 v 100
+            "
+        stroke="black"  stroke-width="0.1"
+        stroke-dasharray="4 1" stroke-dashoffset="2"
+        fill="none"
+    />
+
+    <!-- 'x' height equal 1ex -->
+    <line x1="0" y1="10" x2="1ex" y2="10" stroke="red" transform="rotate(-90 0 10)"/>
+    <text x="0" y="10"  dx="-0.03418em"  fill="cyan"  >x</text>
+    <!-- 'M' width equal 0.502em -->
+    <line x1="0" y1="20" x2="0.5019531em" y2="20" stroke="red"/>
+    <text x="0" y="20"  dx="-0.023926em"  fill="cyan"  >M</text>
+
+
+    <!-- Text positioning -->
+    <text x="10" y="10"                  fill="blue" >L</text>
+    <text x="10" y="20"  dx="-0.11377em"  fill="red"  > L</text>
+    
+    <!-- <text x="10" y="20"  dx="-0.274902em" dy="1.286354582ex"  fill="red"  >¯L</text> -->
+    <!-- <text x="10" y="20"  dx="-0.275146em" dy="1.287350598ex"  fill="red"  >¨L</text> -->
+    
+    <text x="10" y="20"  dx="-0.182617em" fill="green" fill-opacity="0.6" >˻L</text>
+    <text x="10" y="20"  dx="-0.182617em" dy="1.381474104ex"  fill="darkorange"  >˹L</text>
+    <circle cx="10" cy="20" r="0.032471em" stroke="black" stroke-width="0.05" fill="none" />
+    
+    <text x="20" y="10"                              fill="blue" >+</text>
+    <text x="20" y="10"  dx="-0.275em" dy="0.542ex"  fill="red"  fill-opacity="0.6" >+</text>
+
+
+
+    <!-- text-anchor:
+          start  - left-aligned
+          middle - center-aligned
+          end    - right-aligned -->
+    <path d="M 50,0 v 30" stroke="black" stroke-width="0.4" />
+    <text x="50" y="10"                       fill="red" >a+s</text>
+    <text x="50" y="20" text-anchor="middle"  fill="green" >a+m</text>
+    <text x="50" y="30" text-anchor="end"     fill="blue" >a+e</text>
+
+
+    <!-- Stroke and Fill -->
+    <text x="80" y="10"  stroke-width="0.5"  class="mediumfont"
+        stroke="none"      fill="darkcyan" >
+            Fill </text>
+    <text x="80" y="20"  stroke-width="0.5"  class="mediumfont"
+        stroke="magenta" fill="none" >
+            Stroke </text>
+    <text x="80" y="30"  stroke-width="0.5" stroke-opacity="0.7"  class="mediumfont"
+        stroke="magenta" fill="darkcyan" >
+            Fill_Stroke </text>  
+
+
+    <!-- Kerning, Letter Spacing, Word Spacing -->
+    <text x="10" y="50" style="kerning:2;"              fill="red"  class="smallfont" >+MMAV MM</text>
+    <text x="10" y="50" letter-spacing="0.55em"  stroke="blue" stroke-width="0.2" fill="none"  class="smallfont" >+MMAV lett</text>
+    <text x="10" y="55" letter-spacing="0.55em"  fill="blue"  class="smallfont" >+MMAV lett</text>
+    <text x="10" y="60"                          fill="red"  class="smallfont" >+MMAV MM</text>
+    <text x="10" y="60" word-spacing="0.55em"    stroke="green" stroke-width="0.2" fill="none"  class="smallfont" >+MMAV MM word</text>
+    <text x="10" y="65" word-spacing="0.55em"    fill="green"  class="smallfont" >+MMAV MM word</text>
+    <!-- <text x="10" y="70" letter-spacing="1" word-spacing="0.55em"  stroke="black" stroke-width="0.4" fill="none" >MAV MMr</text> -->
+    
+
+    <!-- Vertical Text -->
+    <circle cx="10" cy="80" r="0.5" />
+    <text x="10" y="80" writing-mode="tb" class="smallfont" >TopBot</text>
+    <circle cx="10" cy="80" r="0.5" />
+    <text x="10" y="80"  class="smallfont" >Horiz</text>
+
+    <!-- Text starting point and letter order
+         right aligned and right to left letters order -->
+    <circle cx="40" cy="90" r="0.5" />
+    <text x="40" y="90" direction="rtl"                               class="smallfont" >123</text>
+    <circle cx="40" cy="99.5" r="0.5" />
+    <text x="40" y="100" direction="rtl" unicode-bidi="bidi-override" class="smallfont" >123</text>
+
+
+    <!-- Text length adjustment.
+    Shrinking or stretching text. -->
+    <text x="90" y="60"  fill="red" > A long long.</text>
+    <text x="90" y="70"  fill="green"
+        textLength="60" lengthAdjust="spacing" > A long long.</text>
+    <text x="90" y="80"  fill="blue"
+        textLength="60" lengthAdjust="spacingAndGlyphs"> A long long.</text> 
+
+
+    <!-- tspan -->
+    <text x="60" y="90"  class="smallfont" >
+        <tspan>
+            <a xlink:href="https://jenkov.com/tutorials/svg/tspan-element.html"
+                xlink:show="new">
+            tspan</a> Line<tspan baseline-shift="super">1</tspan>
+        </tspan>
+        <tspan x="60" dy="2ex" >
+            tspan <tspan font-weight="bold">Line</tspan>2
+        </tspan>
+    </text>
+
+
+    <!-- textPath -->
+    <defs> <path id="text_path" d="M 120, 100  q 50,0 50,-20" /> </defs>
+    <use xlink:href="#text_path" stroke="darkmagenta"  fill="none" />
+    <text class="smallfont">
+        <textPath xlink:href="#text_path"
+            startOffset="3em"
+            lengthAdjust="spacing"
+            textLength="5em"
+        >
+            text on path.
+        </textPath>
+    </text>
+
+</svg>
