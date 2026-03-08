@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="200"  height="160"
+     style="background-color: white;"
+>
+    <path
+        stroke="black"  fill="none" stroke-width="16"
+        stroke-linejoin="miter"
+        stroke-miterlimit="1"
+        d="m 20,140  l 80,-120  l 80,120" />
+    <path
+        stroke="pink"  fill="none" stroke-width="1"
+        d="m 20,140  l 80,-120  l 80,120" />
+</svg>

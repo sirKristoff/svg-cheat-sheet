@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="135"  height="230"
+     style="background-color: white;"
+>
+    <!-- Horizontal ticks -->
+    <g transform="translate(0,15)">
+        <line y1=  "0"  y2=  "0" x2="60" stroke="black" stroke-width="1" />
+        <line y1= "20"  y2= "20" x2="60" stroke="black" stroke-width="1" />
+        <line y1= "50"  y2= "50" x2="60" stroke="black" stroke-width="1" />
+        <line y1= "90"  y2= "90" x2="60" stroke="black" stroke-width="1" />
+        <line y1="110"  y2="110" x2="60" stroke="black" stroke-width="1" />
+        <line y1="130"  y2="130" x2="60" stroke="black" stroke-width="1" />
+    </g>
+    <line y1="220"  y2="220" x2="60" stroke="black" stroke-width="1" />
+
+    <!-- Dimensions and descriptions for dashed line segments -->
+    <g transform="translate(40,13)">
+        <text y=  "0" fill="blue">15 - offset</text>
+        <text y= "20" fill="blue">20 - 1<tspan baseline-shift="super">st</tspan> dash</text>
+        <text y= "50" fill="blue">30 - 1<tspan baseline-shift="super">st</tspan> gap</text>
+        <text y= "90" fill="blue">40 - 2<tspan baseline-shift="super">nd</tspan> dash</text>
+        <text y="110" fill="blue">20 - 2<tspan baseline-shift="super">nd</tspan> gap</text>
+        <text y="130" fill="blue">20 - 1<tspan baseline-shift="super">st</tspan> dash</text>
+    </g>
+    <text y="218" x="50" fill="blue">y=220</text>
+
+    <!-- Dashed line -->
+    <line x1="10" x2="10"  y2="220"
+         stroke="blue" stroke-width="20" stroke-opacity="0.5"
+         stroke-dashoffset="-15"
+         stroke-dasharray="20, 30,  40, 20" />
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="60"  height="120"
+     style="background-color: white;"
+>
+    <line x1="10" y1="15"  x2="50" y2="15" stroke="black" />
+    <line x1="10" y1="15"  x2="50" y2="15"
+         stroke="red"
+         stroke-width="10"
+         stroke-opacity="0.5" />
+
+    <line x1="20" y1="10"  x2="20" y2="100" stroke="black" />
+    <line x1="20" y1="10"  x2="20" y2="100"
+         stroke="green"
+         stroke-width="20"
+         stroke-opacity="0.5" />
+</svg>
