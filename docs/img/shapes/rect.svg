@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="173"  height="103"
+     font-size="11.75210406pt" font-family="Consolas"
+     style="background-color: white;"
+>
+    <g transform="translate(10,15)">
+        <rect x="0" y="0" width="100" height="70"
+             stroke="red"
+             stroke-width="6"
+             stroke-opacity="0.5"
+             stroke-dasharray="15 5"
+             stroke-dashoffset="7.5"
+             fill="green"
+        />
+        <text x="0" y="0" dx="-0.182617em">˻0,0</text>
+        <text x="100" y="70" dx="-0.182617em" dy="1.381474104ex">˹100,70</text>
+    </g>
+</svg>

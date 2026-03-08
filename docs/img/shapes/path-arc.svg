@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1480"  height="960"
+     font-size="10.5769pt" font-family="Consolas"
+     style="background-color: white;"
+>
+    <g transform="scale(4) translate(138,115)"  fill="none" stroke-width="6">
+        <path d="M 100,0  a 100 100  666  1 0  -100 100"  stroke="red"   />
+        <path d="M 100,0  a 100 100  666  0 0  -100 100"  stroke="green" />
+        <path d="M 100,0  a 100 100  666  0 1  -100 100"  stroke="blue"  />
+
+        <g fill="black" >
+            <text x="0" y="0" dx="-0.182617em">˻0,0</text>
+            <text x="103" y="0">˻start point</text>
+            <text x="-73" y="114">end point'</text>
+            <text x="55" y="-90">˻large arc(1)</text>
+            <text x="75" y="-75">˱counterclockwise(0)</text>
+            <text x="-70" y="22">small arc(0)˲</text>
+            <text x="-137" y="40">counterclockwise(0)˲</text>
+            <text x="72" y="85">˹small arc(0)</text>
+            <text x="45" y="105">˹clockwise(1)</text>
+        </g>
+    </g>
+</svg>

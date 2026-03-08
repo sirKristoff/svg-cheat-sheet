@@ -1,0 +1,23 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="200"  height="200"
+     font-size="11.75210406pt" font-family="Consolas"
+     style="background-color: white;"
+>
+    <circle cx="100" cy="100" r="60"
+         stroke="greenyellow"
+         stroke-width="6"
+         stroke-opacity="0.5"
+         stroke-dasharray="25 6.42"
+         fill="blue"
+         fill-opacity="0.5" 
+    />
+
+    <circle cx="100" cy="100" r="2" />
+    <text x="100" y="100" dx="-0.182617em" fill="darkred">˻100;100</text>
+    <text x="100" y="112" dx="-1.65"       fill="darkred">⌀120</text>
+    <text x= "40" y="100" dx="-0.182617em">˻40;</text>
+    <text x="100" y= "37" dx="-0.182617em">˻;37</text>
+    <text x="100" y="163" dx="-0.182617em" dy="1.381474104ex">˹;163</text>
+</svg>

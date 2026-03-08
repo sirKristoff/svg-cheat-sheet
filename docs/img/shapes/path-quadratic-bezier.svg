@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="235"  height="200"
+     font-size="11.75210406pt" font-family="Consolas"
+     style="background-color: white;"
+>
+    <g transform="translate(10,100)">
+        <path d="M            0,  0
+                 q 40, -80   80,  0
+                 T          160, 40
+                "
+             stroke="darkmagenta" stroke-width="6"  fill="none"
+        />
+
+        <polyline points="0,0  40,-80  80,0"  stroke="darkcyan" stroke-width="1.5" fill="none"/>
+        <circle  cx="40" cy="-80"   r="2.0" />
+        <polyline points="80,0  120,80  160,40"  stroke="darkcyan" stroke-width="1.5" fill="none" stroke-dasharray="3.0" />
+        <circle  cx="120" cy="80"  r="2.0" />
+        <text x="40" y="-80" dx="-0.182617em">˻40,-80</text>
+        <text x="80" y="0" dx="-0.182617em">˻80,0</text>
+        <text x="120" y="80" dx="-0.182617em" dy="1.381474104ex">˹120,80</text>
+        <text x="160" y="40" dx="-0.182617em">˻160,40</text>
+    </g>
+</svg>

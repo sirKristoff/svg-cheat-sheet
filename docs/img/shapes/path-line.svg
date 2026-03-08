@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="130"  height="70"
+     style="background-color: white;"
+>
+    <path
+      stroke="red" stroke-width="4"
+      fill="green"
+      d="M 10,10  v    50  h 50
+         m 10, 0  l 0,-50  l 50,50"
+    />
+</svg>

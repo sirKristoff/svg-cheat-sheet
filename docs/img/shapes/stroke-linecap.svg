@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="260"  height="90"
+     viewBox="-15 -5 260 90"
+     font-size="11.75210406pt" font-family="Niramit"
+     style="background-color: white;"
+>
+    <line y2="20" stroke="black" stroke-width="1" />
+    <circle cx="0" cy="40" r="10" stroke="black"  fill="none" />
+    <rect x="-10" y="60" width="20" height="20" stroke="black"  fill="none" />
+    <!--  -->
+    <defs>
+        <g id="thin">
+            <line y1="10" y2="10"  x2="145"
+                 stroke="black" stroke-dasharray="20, 30,  40, 20" />
+        </g>
+    </defs>
+
+    <defs>
+        <g id="thick">
+            <line y1="10" y2="10"  x2="145"
+                 stroke-width="20" stroke-opacity="0.5"
+                 stroke-dasharray="20, 30,  40, 20" />
+        </g>
+    </defs>
+
+    <!--  -->
+    <use xlink:href="#thin"   y="0" />
+    <use xlink:href="#thick"  y="0" stroke="red" />
+    <use xlink:href="#thin"  y="30" />
+    <use xlink:href="#thick" y="30" stroke="green" stroke-linecap="round" />
+    <use xlink:href="#thin"  y="60" />
+    <use xlink:href="#thick" y="60" stroke="blue" stroke-linecap="square" />
+    <text x="150" y="14">butt (default)</text>
+    <text x="150" y="44">round</text>
+    <text x="150" y="74">square</text>
+</svg>
