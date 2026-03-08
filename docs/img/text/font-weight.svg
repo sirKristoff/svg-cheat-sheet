@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="140"  height="130"
+     font-size="23.5pt" font-family="Consolas"
+     style="background-color: white;"
+>
+    <g transform="translate(10,30)">
+        <text y= "0" font-weight="lighter" >lighter</text>
+        <text y="30" font-weight="normal"  >normal</text>
+        <text y="60" font-weight="bold"    >bold</text>
+        <text y="90" font-weight="bolder"  >bolder</text>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="470"  height="65"
+     font-size="47pt" font-family="Consolas"
+     style="background-color: white;"
+>
+    <g transform="translate(10,50)" >
+        <text fill="red" >
+            M0M M1M M2M
+        </text>
+        <text fill="none" stroke="blue" stroke-width="2"
+             letter-spacing="0.5498em"   >
+            MMM MMM
+        </text>
+    </g>
+</svg>

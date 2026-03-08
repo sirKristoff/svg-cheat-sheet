@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="230"  height="195"
+     font-size="23.5pt" font-family="Consolas"
+     style="background-color: white;"
+>
+    <g transform="translate(10,30)">
+        <text y=  "0" font-variant="small-caps"      >Small-Caps</text>
+        <text y= "30" font-variant="all-small-caps"  >All-Small-Caps</text>
+        <text y= "60" font-variant="petite-caps"     >Petite-Caps</text>
+        <text y= "90" font-variant="all-petite-caps" >All-Petite-Caps</text>
+        <text y="120" font-variant="unicase"         >UnIcAsE</text>
+        <text y="150" font-variant="titling-caps"    >Titling-Caps</text>
+    </g>
+</svg>

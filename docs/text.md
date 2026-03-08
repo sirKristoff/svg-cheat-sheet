@@ -27,7 +27,7 @@ Example values:
  - `"smaller"`
  - `"11.75210406pt"`
 
-<tspan style="color:black; background-color:yellow;"> TBD: Font size and line height </tspan>
+<mark> TBD: Font size and line height </mark>
 
 
 ### `font-style`
@@ -53,17 +53,7 @@ Posible values:
  - `"unicase"`
  - `"titling-caps"`
 
-<svg width="230"  height="195" style="background-color: white;"
-    font-size="23.5pt" font-family="Consolas">
-<g transform="translate(10,30)">
-    <text y=  "0" font-variant="small-caps"      >Small-Caps</text>
-    <text y= "30" font-variant="all-small-caps"  >All-Small-Caps</text>
-    <text y= "60" font-variant="petite-caps"     >Petite-Caps</text>
-    <text y= "90" font-variant="all-petite-caps" >All-Petite-Caps</text>
-    <text y="120" font-variant="unicase"         >UnIcAsE</text>
-    <text y="150" font-variant="titling-caps"    >Titling-Caps</text>
-</g>
-</svg>
+![font-variant.svg](img/text/font-variant.svg)
 
 
 ### `font-weight`
@@ -76,15 +66,7 @@ Posible values:
  - `"bolder"`
  - `"lighter"`
 
-<svg width="140"  height="130" style="background-color: white;"
-    font-size="23.5pt" font-family="Consolas">
-<g transform="translate(10,30)">
-    <text y= "0" font-weight="lighter" >lighter</text>
-    <text y="30" font-weight="normal"  >normal</text>
-    <text y="60" font-weight="bold"    >bold</text>
-    <text y="90" font-weight="bolder"  >bolder</text>
-</g>
-</svg>
+![font-weight.svg](img/text/font-weight.svg)
 
 
 
@@ -137,7 +119,8 @@ Posible values:
  - `normal`
  - `bold`
  - `bolder`
- - \<number> <br>
+ - \<number>
+ 
     A \<number> value between 1 and 1000, both values included. Higher numbers represent weights that are bolder than (or as bold as) lower numbers. This allows fine-grain control for variable fonts. For non-variable fonts, if the exact specified weight is unavailable, a fallback weight algorithm is used — numeric values that are divisible by 100 correspond to common weight names, as described in the Common weight name mapping section below.
 
  Value  | Common weight name
@@ -177,18 +160,9 @@ Posible values:
 ```
 
 </td><td>
-<svg width="400"  height="170" style="background-color: white;" 
-  font-size="47pt" font-family="Consolas">
-    <g transform="translate(10,50)"
-      stroke-width="3" stroke-opacity="0.5"  fill-opacity="0.8" >
-        <text x="0" y=  "0"
-          stroke="none" fill="black" > Fill </text>
-        <text x="0" y= "50"
-          stroke="red" fill="none" > Stroke </text>
-        <text x="0" y="100"
-          stroke="red" fill="blue" > Fill_Stroke</text>
-    </g>
-</svg>
+
+![stroke-fill.svg](img/text/stroke-fill.svg)
+
 </td></tr></table>
 
 
@@ -198,12 +172,12 @@ Posible values:
 ### Shifting text position.
 
 <dl>
-<dt>&emsp;<kbd>dx</kbd></dt><dd>
+<dt>&ensp;<kbd>dx</kbd></dt><dd>
   
   The `dx` attribute indicates a **shift** along the **x-axis** on the position of an element or its content.
   
 </dd>
-<dt>&emsp;<kbd>dy</kbd></dt><dd>
+<dt>&ensp;<kbd>dy</kbd></dt><dd>
   
   The `dy` attribute indicates a **shift** along the **y-axis** on the position of an element or its content.
   
@@ -225,27 +199,9 @@ Posible values:
 ```
 
 </td><td>
-<svg width="390"  height="250" style="background-color: white;" 
-  font-size="47pt" font-family="Consolas" >
-    <g transform="translate(10,50)" stroke="darkblue" fill="none" >
-        <text                  > M </text>
-        <text dx="0.5019531em" > M </text>
-        <text x="3em" y="-5" font-size="50%" font-style="italic" fill="black" >
-              dx="0.5019531em" </text>
-    </g>
-    <g transform="translate(10,100)" stroke="darkblue" fill="none" >
-        <text          > x </text>
-        <text dy="1ex" > x </text>
-        <text x="3em" y="-5" font-size="50%" font-style="italic" fill="black" >
-              dy="1ex" </text>
-    </g>
-    <g transform="translate(10,200)" stroke="darkblue" fill="none" >
-        <text                 > M </text>
-        <text dy="1.301793ex" > M </text>
-        <text x="3em" y="-5" font-size="50%" font-style="italic" fill="black" >
-              dy="1.301793ex" </text>
-    </g>
-</svg>
+
+![shifting-position.svg](img/text/shifting-position.svg)
+
 </td></tr></table>
 
 
@@ -258,17 +214,17 @@ The `text-anchor` attribute is applied to each individual text chunk within a gi
 Posible values:
 
 <dl>
-<dt>&emsp;<kbd>"start"</kbd> (<em>default</em>)</dt><dd>
+<dt>&ensp;<kbd>"start"</kbd> (<em>default</em>)</dt><dd>
   
   The rendered characters are aligned such that the start of the text string is at the initial current text position.  For an element with a direction property value of `ltr` (typical for most European languages), the left side of the text is rendered at the initial text position.  For an element with a direction property value of `rtl` (typical for Arabic and Hebrew), the right side of the text is rendered at the initial text position. For an element with a vertical primary text direction (often typical for Asian text), the top side of the text is rendered at the initial text position.
   
 </dd>
-<dt>&emsp;<kbd>"middle"</kbd></dt><dd>
+<dt>&ensp;<kbd>"middle"</kbd></dt><dd>
   
   The rendered characters are aligned such that the middle of the text string is at the current text position.  (For text on a path, conceptually the text string is first laid out in a straight line.  The midpoint between the start of the text string and the end of the text string is determined.  Then, the text string is mapped onto the path with this midpoint placed at the current text position.)
   
 </dd>
-<dt>&emsp;<kbd>"end"</kbd></dt><dd>
+<dt>&ensp;<kbd>"end"</kbd></dt><dd>
   
   The rendered characters are shifted such that the end of the resulting rendered text (final current text position before applying the `text-anchor` property) is at the initial current text position.  For an element with a `direction` property value of `ltr` (typical for most European languages), the right side of the text is rendered at the initial text position.  For an element with a `direction` property value of `rtl` (typical for Arabic and Hebrew), the left side of the text is rendered at the initial text position.  For an element with a vertical primary text direction (often typical for Asian text), the bottom of the text is rendered at the initial text position.
   
@@ -285,33 +241,15 @@ Posible values:
 ```
 
 </td><td>
-<svg width="240"  height="165" style="background-color: white;" 
-  font-size="47pt" font-family="Consolas">
-    <defs><g id="Letter" >
-        <path stroke="grey" d="M0,0 v-20  M-40,0 h80" />
-        <text fill="darkblue" > A </text>
-        <circle r="3" fill="red" />
-    </g></defs>
-    <g transform="translate(50,50)" >
-        <use href="#Letter" transform="translate(0,0)"
-          text-anchor="start" />
-        <use href="#Letter" transform="translate(0,50)"
-          text-anchor="middle" />
-        <use href="#Letter" transform="translate(0,100)"
-          text-anchor="end" />
-    </g>
-    <g font-size="50%" font-style="italic" >
-    <text x="120" y= "40" >start</text>
-    <text x="120" y= "90" >middle</text>
-    <text x="120" y="140" >end</text>
-    </g>
-</svg>
+
+![text-anchor.svg](img/text/text-anchor.svg)
+
 </td></tr></table>
 
 
 ### Text direction.
 
-<tspan style="color:black; background-color:yellow;"> TBD: </tspan>
+<mark> TBD: </mark>
  - [writing-mode](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/writing-mode)
  - [direction](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/direction)
  - [unicode-bidi](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/unicode-bidi)
@@ -337,7 +275,7 @@ Posible values:
 ### [Kerning](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-kerning), [letter](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/letter-spacing) and [word](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/word-spacing) spacing.
 
 <dl>
-<dt>&emsp;<kbd>letter-spacing</kbd></dt><dd>
+<dt>&ensp;<kbd>letter-spacing</kbd></dt><dd>
   
   The **`letter-spacing`** attribute controls **spacing between text characters**.
   
@@ -346,7 +284,7 @@ Posible values:
   If the attribute value has a unit identifier, such as `.25em` or `1%`, then the browser converts the `<length>` into its corresponding value in the current user coordinate system.
   
 </dd>
-<dt>&emsp;<kbd>word-spacing</kbd></dt><dd>
+<dt>&ensp;<kbd>word-spacing</kbd></dt><dd>
   
   The **`word-spacing`** attribute specifies **spacing behavior between words**.
   
@@ -370,16 +308,9 @@ Posible values:
 ```
 
 </td><td>
-<svg width="470"  height="65" style="background-color: white;" 
-  font-size="47pt" font-family="Consolas">
-    <g transform="translate(10,50)" >
-        <text fill="red" >
-            M0M M1M M2M </text>
-        <text fill="none" stroke="blue" stroke-width="2"
-          letter-spacing="0.5498em"   >
-            MMM MMM </text>
-    </g>
-</svg>
+
+![letter-spacing.svg](img/text/letter-spacing.svg)
+
 </td></tr></table>
 
 
@@ -396,22 +327,15 @@ Posible values:
 ```
 
 </td><td>
-<svg width="370"  height="65" style="background-color: white;" 
-  font-size="47pt" font-family="Consolas">
-    <g transform="translate(10,50)" >
-        <text fill="red" >
-            00 11 22 </text>
-        <text fill="none" stroke="blue" stroke-width="2"
-          word-spacing="0.5498em"   >
-            00 11 22</text>
-    </g>
-</svg>
+
+![word-spacing.svg](img/text/word-spacing.svg)
+
 </td></tr></table>
 
 
 ### Shrinking and stretching text.
 
-<tspan style="color:black; background-color:yellow;"> TBD: </tspan>
+<mark> TBD: </mark>
  - [lengthAdjust](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/lengthAdjust)
  - [textLength](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/textLength)
 
@@ -431,12 +355,12 @@ Posible values:
 
 ## `<text>`
 
-<tspan style="color:black; background-color:yellow;"> TBD: </tspan>
+<mark> TBD: </mark>
 
 
 ## [`<tspan>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/tspan)
 
-<tspan style="color:black; background-color:yellow;"> TBD: </tspan>
+<mark> TBD: </mark>
 
 ```svg
     <!-- tspan -->
@@ -455,7 +379,7 @@ Posible values:
 
 ## [`<textPath>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/textPath)
 
-<tspan style="color:black; background-color:yellow;"> TBD: </tspan>
+<mark> TBD: </mark>
 
 ```svg
     <!-- textPath -->

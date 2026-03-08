@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="370"  height="65"
+     font-size="47pt" font-family="Consolas"
+     style="background-color: white;"
+>
+    <g transform="translate(10,50)" >
+        <text fill="red" >
+            00 11 22
+        </text>
+        <text fill="none" stroke="blue" stroke-width="2"
+             word-spacing="0.5498em"   >
+            00 11 22
+        </text>
+    </g>
+</svg>

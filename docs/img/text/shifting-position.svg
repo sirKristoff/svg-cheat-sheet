@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="390"  height="250"
+     font-size="47pt" font-family="Consolas"
+     style="background-color: white;"
+>
+    <g transform="translate(10,50)" stroke="darkblue" fill="none" >
+        <text                  > M </text>
+        <text dx="0.5019531em" > M </text>
+        <text x="3em" y="-5" font-size="50%" font-style="italic" fill="black" >
+              dx="0.5019531em" </text>
+    </g>
+    <g transform="translate(10,100)" stroke="darkblue" fill="none" >
+        <text          > x </text>
+        <text dy="1ex" > x </text>
+        <text x="3em" y="-5" font-size="50%" font-style="italic" fill="black" >
+              dy="1ex" </text>
+    </g>
+    <g transform="translate(10,200)" stroke="darkblue" fill="none" >
+        <text                 > M </text>
+        <text dy="1.301793ex" > M </text>
+        <text x="3em" y="-5" font-size="50%" font-style="italic" fill="black" >
+              dy="1.301793ex" </text>
+    </g>
+</svg>
